@@ -1,0 +1,18 @@
+{
+  "id": "piece_demo_arc_01",
+  "description": "Quart de cercle — démo support des arcs",
+  "joints": [
+    {
+      "type": "arc",
+      "debut":  [0.5, 0.2, 0.8],
+      "fin":    [0.7, 0.4, 0.8],
+      "centre": [0.5, 0.4, 0.8]
+    }
+  ],
+  "parametres": {
+    "pas_mm": 10,
+    "vitesse_nominale": 0.05,
+    "vitesse_angle": 0.02,
+    "seuil_angle_deg": 30
+  }
+}

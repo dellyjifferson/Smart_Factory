@@ -1,0 +1,28 @@
+{
+  "id": "piece_demo_mixte_01",
+  "description": "Pièce mixte — ligne + arc + ligne (test cas réaliste)",
+  "joints": [
+    {
+      "type": "ligne",
+      "debut": [0.5, 0.2, 0.8],
+      "fin":   [0.5, 0.35, 0.8]
+    },
+    {
+      "type": "arc",
+      "debut":  [0.5, 0.35, 0.8],
+      "fin":    [0.6, 0.45, 0.8],
+      "centre": [0.6, 0.35, 0.8]
+    },
+    {
+      "type": "ligne",
+      "debut": [0.6, 0.45, 0.8],
+      "fin":   [0.75, 0.45, 0.8]
+    }
+  ],
+  "parametres": {
+    "pas_mm": 10,
+    "vitesse_nominale": 0.05,
+    "vitesse_angle": 0.02,
+    "seuil_angle_deg": 30
+  }
+}

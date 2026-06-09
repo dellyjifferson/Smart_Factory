@@ -1,0 +1,22 @@
+{
+  "id": "piece_demo_L_01",
+  "description": "Cordon en L — pièce de démonstration v1 (un angle à 90°)",
+  "joints": [
+    {
+      "type": "ligne",
+      "debut": [0.5, 0.2, 0.8],
+      "fin":   [0.5, 0.4, 0.8]
+    },
+    {
+      "type": "ligne",
+      "debut": [0.5, 0.4, 0.8],
+      "fin":   [0.7, 0.4, 0.8]
+    }
+  ],
+  "parametres": {
+    "pas_mm": 10,
+    "vitesse_nominale": 0.05,
+    "vitesse_angle": 0.02,
+    "seuil_angle_deg": 30
+  }
+}

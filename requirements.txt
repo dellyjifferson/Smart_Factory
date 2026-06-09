@@ -1,1 +1,4 @@
 coppeliasim-zmqremoteapi-client
+matplotlib
+scikit-learn
+joblib
