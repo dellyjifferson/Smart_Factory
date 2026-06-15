@@ -64,7 +64,7 @@ Move the robot to a position (example):
 sim.startSimulation()  
    
  # Move target to a position above the piece  
- position = [0.35, 0.0, 0.15]   # X, Y, Z in meters, world frame  
+ position = [0.30, 0.0, 0.165]   # X, Y, Z in meters, world frame  
  sim.setObjectPosition(target, -1, position)  # -1 = world frame  
    
  # The robot will automatically follow via IK  
