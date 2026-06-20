@@ -1,0 +1,19 @@
+# Virtual environment
+.env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Output files (generated at runtime)
+rapport_qualite.json
+*.log
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
