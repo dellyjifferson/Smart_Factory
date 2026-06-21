@@ -1,12 +1,34 @@
 {
-  "id": "piece_demo_L_scene",
-  "description": "Cordon en L pose sur la piece reelle de la scene (coords monde)",
+  "id": "piece_assemblage_deux_plaques_01",
+  "description": "Deux plaques metalliques identiques a souder le long d'une seule couture au centre, avec cible IK /ABB/target.",
+  "pieces": [
+    {
+      "nom": "piece1",
+      "type": "cuboid",
+      "dimensions": [0.15, 0.06, 0.02],
+      "position": [0.300, -0.05, 0.165]
+    },
+    {
+      "nom": "piece2",
+      "type": "cuboid",
+      "dimensions": [0.15, 0.06, 0.02],
+      "position": [0.300, 0.05, 0.165]
+    }
+  ],
+  "soudures": {
+    "seam": {
+      "orientation": "axe_X",
+      "position": [0.300, 0.0, 0.225],
+      "debut": [0.30, 0.0, 0.225],
+      "fin": [0.30, 0.0, 0.225],
+      "points": 11
+    }
+  },
   "joints": [
-    { "type": "ligne", "debut": [0.28, -0.03, 0.20], "fin": [0.28, 0.03, 0.20] },
-    { "type": "ligne", "debut": [0.28, 0.03, 0.20], "fin": [0.32, 0.03, 0.20] }
+    { "type": "ligne", "debut": [0.28, 0.0, 0.225], "fin": [0.32, 0.0, 0.225] }
   ],
   "parametres": {
-    "pas_mm": 10,
+    "pas_mm": 4,
     "vitesse_nominale": 0.03,
     "vitesse_angle": 0.015,
     "seuil_angle_deg": 30

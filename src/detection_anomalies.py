@@ -197,18 +197,27 @@ def afficher_statut_coppeliasim(sim, statut: str):
 #  5. TRACÉ DU CORDON (Drawing Object — fourni par Delly)
 # ══════════════════════════════════════════════════════
 
+STANDOFF = 0.05  # distance entre /ABB/tip et la surface de la pièce
+
 def tracer_point_cordon(sim, drawing_handle: int, pos: list):
     """
     Ajoute un point au tracé du cordon dans CoppeliaSim.
+    Le point est projeté sur la surface de la pièce (Z réel - STANDOFF)
+    pour que le cordon apparaisse sur la couture et non en l'air.
 
     Paramètres
     ----------
     sim            : objet ZMQ RemoteAPI
     drawing_handle : handle du Drawing Object créé par Delly
-    pos            : [x, y, z] — position réelle du robot à ce pas
+    pos            : [x, y, z] — position réelle du tip à ce pas
     """
+    point_sur_piece = [
+        pos[0],
+        pos[1],
+        pos[2] - STANDOFF  # projeter sur la surface de la couture
+    ]
     try:
-        sim.addDrawingObjectItem(drawing_handle, pos)
+        sim.addDrawingObjectItem(drawing_handle, point_sur_piece)
     except Exception as e:
         print(f"  [cordon] Erreur tracé : {e}")
 
