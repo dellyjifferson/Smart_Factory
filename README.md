@@ -11,8 +11,8 @@
 SmartFactory simule une **cellule robotisée de soudage intelligente**. Le robot
 ABB IRB 1660ID (Étant indisponible, on a utilisé ABB IRB 140) est piloté depuis Python via l'API ZMQ Remote de CoppeliaSim et
 exécute des trajectoires de soudage générées par un module d'IA à partir de la
-géométrie de la pièce. La qualité du cordon est surveillée en temps réel et un
-rapport de fin de cycle est produit à chaque pièce.
+géométrie des pièces. La qualité du cordon est surveillée en temps réel et un
+rapport de fin de cycle est produit à chaque soudure.
 
 Le système se décompose en **quatre modules** indépendants qui s'échangent un
 contrat de données fixé d'avance — la *trajectoire* — ce qui permet à chaque
