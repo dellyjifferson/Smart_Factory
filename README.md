@@ -183,7 +183,7 @@ Captures dans [`media/`](media/) — un PNG par pièce + un comparatif v1/v2.
 
 ## Structure du dépôt
 
-```
+```text
 Smart_Factory/
 ├── README.md
 ├── requirements.txt
@@ -199,7 +199,7 @@ Smart_Factory/
 │   ├── ia_trajectoire_ml.py         Module 3 — v2 modèle ML
 │   ├── entrainement_modele.py       Module 3 — pipeline d'entraînement
 │   ├── visualiser_trajectoire.py    Module 3 — viz 3D (v1 ou v2)
-│   └── comparer_v1_v2.py            Module 3 — viz côte à côte v1/v2
+│   ├── comparer_v1_v2.py            Module 3 — viz côte à côte v1/v2
 │   └── (robot_control.py, main.py, detection_anomalies.py — à venir)
 └── tests/
     └── audit_complet.py             47 tests automatisés (module 3)
@@ -222,8 +222,8 @@ s'y conformer.
 
 ## Équipe — Groupe 1 *(ARCMIND ROBOTICS)*
 
-| Membre                                | Module |
-|---------------------------------------|--------|
+| Membre                                | Module                            |
+|---------------------------------------|--------                           |
 | Delly Jean Jifferson                  | 1 — Scène CoppeliaSim             |
 | Louis Dulze Hkloé Sassie Shaikelta    | 2 — Intégration / contrôle robot  |
 | Saint-Vil Angie-Reyna Leddycia        | 3 — IA / trajectoire              |
